@@ -6,17 +6,16 @@ website:
   title: "Alexander Meehan"
   favicon: images/favicon.ico
   navbar:
-    title: false
     logo: images/favicon.ico
     left:
       - href: index.qmd
         text: Home
       - href: about.qmd
         text: About
-      - href: cv.qmd
-        text: CV
-      - href: projects/index.qmd
-        text: Projects
+      - text: Projects
+        menu:
+          - href: projects/index.qmd
+            text: All Projects
       - href: Python.qmd
         text: Python
       - href: reflection.qmd
@@ -24,12 +23,22 @@ website:
     right:
       - href: contact.qmd
         text: Contact
-      - href: https://github.com/alexandermeehan
-        text: GitHub
+      - href: cv.qmd
+        text: CV
         target: _blank
-  footer:
+      - icon: github
+        href: https://github.com/alexandermeehan
+        target: _blank
+  page-footer:
     left: "© 2026 Alexander Meehan"
-    right: "Built with [Quarto](https://quarto.org)"
+    right:
+      - icon: github
+        href: https://github.com/alexandermeehan
+      - icon: linkedin
+        href: https://linkedin.com/in/alexander-meehan-267875208
+      - icon: envelope
+        href: mailto:alex.meehan2001@gmail.com
+    center: "Built with [Quarto](https://quarto.org)"
 
 format:
   html:

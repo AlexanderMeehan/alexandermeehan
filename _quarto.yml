@@ -30,7 +30,7 @@ website:
         href: https://github.com/alexandermeehan
         target: _blank
   page-footer:
-    left: "© 2026 Alexander Meehan"
+    left: "Copyright 2026 Alexander Meehan"
     right:
       - icon: github
         href: https://github.com/alexandermeehan

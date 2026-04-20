@@ -1,0 +1,9 @@
+---
+title: "Physical Activity as a Treatment for Mental Health"
+categories: [Research Design, Field Experiments, Mental Health]
+---
+
+A research proposal examining the causal effect of physical activity on improved
+mental health outcomes when used as part of prescribed treatment.
+
+[Download the full report (DOCX)](docs/physical_activity_mental_health.docx)

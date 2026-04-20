@@ -1,0 +1,9 @@
+---
+title: "The Psychological Effects of Disinformation on Conflict"
+categories: [International Relations, Political Psychology, Disinformation]
+---
+
+An analysis of how disinformation campaigns exploit cognitive biases to escalate
+societal conflict, using the Capitol Hill insurrection as a case study.
+
+[Download the full report (DOCX)](docs/disinformation_and_conflict.docx)

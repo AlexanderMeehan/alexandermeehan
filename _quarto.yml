@@ -1,0 +1,29 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Alexander Meehan"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - href: cv.qmd
+        text: CV
+      - href: projects/index.qmd
+        text: Projects
+      - href: Python.qmd
+        text: Python
+
+format:
+  html:
+    theme:
+      light:
+        - flatly
+        - styles.scss
+        - styles-light.scss
+      dark:
+        - darkly
+        - styles.scss

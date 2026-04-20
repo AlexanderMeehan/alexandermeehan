@@ -1,0 +1,74 @@
+---
+title: "Sales Dashboard"
+code-fold: true
+---
+
+## SME Annual Financial Overview
+
+This dashboard presents a financial overview of a small-to-medium enterprise (SME),
+analysing monthly revenue, costs and profit across a full calendar year. Hover over
+any point or bar for exact values.
+
+```{python}
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
+
+months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+         "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+
+revenue = [42, 58, 55, 70, 65, 80, 78, 90, 85, 95, 102, 120]
+costs   = [30, 35, 33, 40, 38, 45, 44, 50, 47, 52,  55,  60]
+profit  = [r - c for r, c in zip(revenue, costs)]
+
+NAVY = "#1B2A4A"
+GOLD = "#C9A84C"
+RED  = "#CC3333"
+
+fig = make_subplots(
+    rows=1, cols=2,
+    subplot_titles=("Revenue vs Costs (€k)", "Monthly Profit (€k)"),
+    horizontal_spacing=0.12,
+)
+
+fig.add_trace(
+    go.Scatter(x=months, y=revenue, mode="lines+markers", name="Revenue",
+               line=dict(color=NAVY, width=3), marker=dict(size=8),
+               hovertemplate="%{x}<br>Revenue: €%{y}k<extra></extra>"),
+    row=1, col=1,
+)
+fig.add_trace(
+    go.Scatter(x=months, y=costs, mode="lines+markers", name="Costs",
+               line=dict(color=GOLD, width=3), marker=dict(size=8),
+               hovertemplate="%{x}<br>Costs: €%{y}k<extra></extra>"),
+    row=1, col=1,
+)
+
+bar_colors = [NAVY if p >= 0 else RED for p in profit]
+fig.add_trace(
+    go.Bar(x=months, y=profit, marker_color=bar_colors, name="Profit",
+           hovertemplate="%{x}<br>Profit: €%{y}k<extra></extra>"),
+    row=1, col=2,
+)
+
+fig.update_layout(
+    title=dict(text="SME Annual Financial Overview", x=0.5,
+               font=dict(size=18, color=NAVY)),
+    paper_bgcolor="#F4F6FA",
+    plot_bgcolor="#F4F6FA",
+    height=480,
+    showlegend=True,
+    legend=dict(orientation="h", y=-0.15, x=0.25),
+    margin=dict(l=50, r=30, t=80, b=50),
+)
+fig.update_yaxes(title_text="€ (thousands)", gridcolor="#d9dee8",
+                 zeroline=True, zerolinecolor=GOLD)
+fig.update_xaxes(gridcolor="#d9dee8")
+
+fig.show()
+```
+
+## Key Takeaways
+
+- **Revenue** grew steadily across the year, peaking at **€120k** in December
+- **Costs** remained controlled, never exceeding 50% of revenue
+- **Profit** was positive every month, reaching **€60k** in December

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-label="Physical activity and mental health">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1B2A4A"/>
+      <stop offset="100%" stop-color="#2F4170"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#bg1)"/>
+
+  <!-- ECG / heartbeat line across middle -->
+  <polyline
+    points="40,230 140,230 170,230 190,180 210,280 230,150 250,230 380,230 400,230 420,200 440,230 560,230"
+    fill="none" stroke="#C9A84C" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Running figure (left) -->
+  <g fill="#ffffff" transform="translate(90,100)">
+    <circle cx="40" cy="20" r="16"/>
+    <path d="M30 40 Q45 60 55 80 L70 75 L85 95 L75 110 L60 100 L50 120 L60 155 L45 160 L30 125 L15 140 L5 125 L25 95 Q15 70 20 55 Z"/>
+  </g>
+
+  <!-- Brain outline (right) -->
+  <g fill="none" stroke="#ffffff" stroke-width="4" stroke-linejoin="round" transform="translate(380,110)">
+    <path d="M30 60 Q10 50 20 30 Q20 10 45 12 Q55 0 75 8 Q95 0 105 15 Q125 15 120 40 Q135 55 115 75 Q115 95 90 95 Q80 110 60 100 Q40 110 30 95 Q10 95 20 75 Z"/>
+    <path d="M70 10 L70 100" stroke-dasharray="4 6"/>
+    <path d="M40 40 Q55 50 50 70"/>
+    <path d="M90 40 Q80 55 95 70"/>
+  </g>
+
+  <text x="300" y="360" text-anchor="middle" fill="#ffffff" font-family="Helvetica, Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="1">
+    Activity · Mind · Wellbeing
+  </text>
+</svg>

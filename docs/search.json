@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "Python.html",
+    "href": "Python.html",
+    "title": "Sales Dashboard",
+    "section": "",
+    "text": "This dashboard presents a financial overview of a small-to-medium enterprise (SME), analysing monthly revenue, costs and profit across a full calendar year. Hover over any point or bar for exact values.\n\n\nCode\nimport plotly.graph_objects as go\nfrom plotly.subplots import make_subplots\n\nmonths = [\"Jan\", \"Feb\", \"Mar\", \"Apr\", \"May\", \"Jun\",\n         \"Jul\", \"Aug\", \"Sep\", \"Oct\", \"Nov\", \"Dec\"]\n\nrevenue = [42, 58, 55, 70, 65, 80, 78, 90, 85, 95, 102, 120]\ncosts   = [30, 35, 33, 40, 38, 45, 44, 50, 47, 52,  55,  60]\nprofit  = [r - c for r, c in zip(revenue, costs)]\n\nNAVY = \"#1B2A4A\"\nGOLD = \"#C9A84C\"\nRED  = \"#CC3333\"\n\nfig = make_subplots(\n    rows=1, cols=2,\n    subplot_titles=(\"Revenue vs Costs (€k)\", \"Monthly Profit (€k)\"),\n    horizontal_spacing=0.12,\n)\n\nfig.add_trace(\n    go.Scatter(x=months, y=revenue, mode=\"lines+markers\", name=\"Revenue\",\n               line=dict(color=NAVY, width=3), marker=dict(size=8),\n               hovertemplate=\"%{x}&lt;br&gt;Revenue: €%{y}k&lt;extra&gt;&lt;/extra&gt;\"),\n    row=1, col=1,\n)\nfig.add_trace(\n    go.Scatter(x=months, y=costs, mode=\"lines+markers\", name=\"Costs\",\n               line=dict(color=GOLD, width=3), marker=dict(size=8),\n               hovertemplate=\"%{x}&lt;br&gt;Costs: €%{y}k&lt;extra&gt;&lt;/extra&gt;\"),\n    row=1, col=1,\n)\n\nbar_colors = [NAVY if p &gt;= 0 else RED for p in profit]\nfig.add_trace(\n    go.Bar(x=months, y=profit, marker_color=bar_colors, name=\"Profit\",\n           hovertemplate=\"%{x}&lt;br&gt;Profit: €%{y}k&lt;extra&gt;&lt;/extra&gt;\"),\n    row=1, col=2,\n)\n\nfig.update_layout(\n    title=dict(text=\"SME Annual Financial Overview\", x=0.5,\n               font=dict(size=18, color=NAVY)),\n    paper_bgcolor=\"#F4F6FA\",\n    plot_bgcolor=\"#F4F6FA\",\n    height=480,\n    showlegend=True,\n    legend=dict(orientation=\"h\", y=-0.15, x=0.25),\n    margin=dict(l=50, r=30, t=80, b=50),\n)\nfig.update_yaxes(title_text=\"€ (thousands)\", gridcolor=\"#d9dee8\",\n                 zeroline=True, zerolinecolor=GOLD)\nfig.update_xaxes(gridcolor=\"#d9dee8\")\n\nfig.show()"
+  },
+  {
+    "objectID": "Python.html#sme-annual-financial-overview",
+    "href": "Python.html#sme-annual-financial-overview",
+    "title": "Sales Dashboard",
+    "section": "",
+    "text": "This dashboard presents a financial overview of a small-to-medium enterprise (SME), analysing monthly revenue, costs and profit across a full calendar year. Hover over any point or bar for exact values.\n\n\nCode\nimport plotly.graph_objects as go\nfrom plotly.subplots import make_subplots\n\nmonths = [\"Jan\", \"Feb\", \"Mar\", \"Apr\", \"May\", \"Jun\",\n         \"Jul\", \"Aug\", \"Sep\", \"Oct\", \"Nov\", \"Dec\"]\n\nrevenue = [42, 58, 55, 70, 65, 80, 78, 90, 85, 95, 102, 120]\ncosts   = [30, 35, 33, 40, 38, 45, 44, 50, 47, 52,  55,  60]\nprofit  = [r - c for r, c in zip(revenue, costs)]\n\nNAVY = \"#1B2A4A\"\nGOLD = \"#C9A84C\"\nRED  = \"#CC3333\"\n\nfig = make_subplots(\n    rows=1, cols=2,\n    subplot_titles=(\"Revenue vs Costs (€k)\", \"Monthly Profit (€k)\"),\n    horizontal_spacing=0.12,\n)\n\nfig.add_trace(\n    go.Scatter(x=months, y=revenue, mode=\"lines+markers\", name=\"Revenue\",\n               line=dict(color=NAVY, width=3), marker=dict(size=8),\n               hovertemplate=\"%{x}&lt;br&gt;Revenue: €%{y}k&lt;extra&gt;&lt;/extra&gt;\"),\n    row=1, col=1,\n)\nfig.add_trace(\n    go.Scatter(x=months, y=costs, mode=\"lines+markers\", name=\"Costs\",\n               line=dict(color=GOLD, width=3), marker=dict(size=8),\n               hovertemplate=\"%{x}&lt;br&gt;Costs: €%{y}k&lt;extra&gt;&lt;/extra&gt;\"),\n    row=1, col=1,\n)\n\nbar_colors = [NAVY if p &gt;= 0 else RED for p in profit]\nfig.add_trace(\n    go.Bar(x=months, y=profit, marker_color=bar_colors, name=\"Profit\",\n           hovertemplate=\"%{x}&lt;br&gt;Profit: €%{y}k&lt;extra&gt;&lt;/extra&gt;\"),\n    row=1, col=2,\n)\n\nfig.update_layout(\n    title=dict(text=\"SME Annual Financial Overview\", x=0.5,\n               font=dict(size=18, color=NAVY)),\n    paper_bgcolor=\"#F4F6FA\",\n    plot_bgcolor=\"#F4F6FA\",\n    height=480,\n    showlegend=True,\n    legend=dict(orientation=\"h\", y=-0.15, x=0.25),\n    margin=dict(l=50, r=30, t=80, b=50),\n)\nfig.update_yaxes(title_text=\"€ (thousands)\", gridcolor=\"#d9dee8\",\n                 zeroline=True, zerolinecolor=GOLD)\nfig.update_xaxes(gridcolor=\"#d9dee8\")\n\nfig.show()"
+  },
+  {
+    "objectID": "Python.html#key-takeaways",
+    "href": "Python.html#key-takeaways",
+    "title": "Sales Dashboard",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\n\nRevenue grew steadily across the year, peaking at €120k in December\nCosts remained controlled, never exceeding 50% of revenue\nProfit was positive every month, reaching €60k in December"
+  },
+  {
+    "objectID": "projects/sales_dashboard.html",
+    "href": "projects/sales_dashboard.html",
+    "title": "Sales Dashboard",
+    "section": "",
+    "text": "This dashboard presents a financial overview of a small-to-medium enterprise (SME), analysing monthly revenue, costs and profit across a full calendar year. Hover over any point or bar for exact values.\n\n\nCode\nimport plotly.graph_objects as go\nfrom plotly.subplots import make_subplots\n\nmonths = [\"Jan\", \"Feb\", \"Mar\", \"Apr\", \"May\", \"Jun\",\n         \"Jul\", \"Aug\", \"Sep\", \"Oct\", \"Nov\", \"Dec\"]\n\nrevenue = [42, 58, 55, 70, 65, 80, 78, 90, 85, 95, 102, 120]\ncosts   = [30, 35, 33, 40, 38, 45, 44, 50, 47, 52,  55,  60]\nprofit  = [r - c for r, c in zip(revenue, costs)]\n\nNAVY = \"#1B2A4A\"\nGOLD = \"#C9A84C\"\nRED  = \"#CC3333\"\n\nfig = make_subplots(\n    rows=1, cols=2,\n    subplot_titles=(\"Revenue vs Costs (€k)\", \"Monthly Profit (€k)\"),\n    horizontal_spacing=0.12,\n)\n\nfig.add_trace(\n    go.Scatter(x=months, y=revenue, mode=\"lines+markers\", name=\"Revenue\",\n               line=dict(color=NAVY, width=3), marker=dict(size=8),\n               hovertemplate=\"%{x}&lt;br&gt;Revenue: €%{y}k&lt;extra&gt;&lt;/extra&gt;\"),\n    row=1, col=1,\n)\nfig.add_trace(\n    go.Scatter(x=months, y=costs, mode=\"lines+markers\", name=\"Costs\",\n               line=dict(color=GOLD, width=3), marker=dict(size=8),\n               hovertemplate=\"%{x}&lt;br&gt;Costs: €%{y}k&lt;extra&gt;&lt;/extra&gt;\"),\n    row=1, col=1,\n)\n\nbar_colors = [NAVY if p &gt;= 0 else RED for p in profit]\nfig.add_trace(\n    go.Bar(x=months, y=profit, marker_color=bar_colors, name=\"Profit\",\n           hovertemplate=\"%{x}&lt;br&gt;Profit: €%{y}k&lt;extra&gt;&lt;/extra&gt;\"),\n    row=1, col=2,\n)\n\nfig.update_layout(\n    title=dict(text=\"SME Annual Financial Overview\", x=0.5,\n               font=dict(size=18, color=NAVY)),\n    paper_bgcolor=\"#F4F6FA\",\n    plot_bgcolor=\"#F4F6FA\",\n    height=480,\n    showlegend=True,\n    legend=dict(orientation=\"h\", y=-0.15, x=0.25),\n    margin=dict(l=50, r=30, t=80, b=50),\n)\nfig.update_yaxes(title_text=\"€ (thousands)\", gridcolor=\"#d9dee8\",\n                 zeroline=True, zerolinecolor=GOLD)\nfig.update_xaxes(gridcolor=\"#d9dee8\")\n\nfig.show()"
+  },
+  {
+    "objectID": "projects/sales_dashboard.html#sme-annual-financial-overview",
+    "href": "projects/sales_dashboard.html#sme-annual-financial-overview",
+    "title": "Sales Dashboard",
+    "section": "",
+    "text": "This dashboard presents a financial overview of a small-to-medium enterprise (SME), analysing monthly revenue, costs and profit across a full calendar year. Hover over any point or bar for exact values.\n\n\nCode\nimport plotly.graph_objects as go\nfrom plotly.subplots import make_subplots\n\nmonths = [\"Jan\", \"Feb\", \"Mar\", \"Apr\", \"May\", \"Jun\",\n         \"Jul\", \"Aug\", \"Sep\", \"Oct\", \"Nov\", \"Dec\"]\n\nrevenue = [42, 58, 55, 70, 65, 80, 78, 90, 85, 95, 102, 120]\ncosts   = [30, 35, 33, 40, 38, 45, 44, 50, 47, 52,  55,  60]\nprofit  = [r - c for r, c in zip(revenue, costs)]\n\nNAVY = \"#1B2A4A\"\nGOLD = \"#C9A84C\"\nRED  = \"#CC3333\"\n\nfig = make_subplots(\n    rows=1, cols=2,\n    subplot_titles=(\"Revenue vs Costs (€k)\", \"Monthly Profit (€k)\"),\n    horizontal_spacing=0.12,\n)\n\nfig.add_trace(\n    go.Scatter(x=months, y=revenue, mode=\"lines+markers\", name=\"Revenue\",\n               line=dict(color=NAVY, width=3), marker=dict(size=8),\n               hovertemplate=\"%{x}&lt;br&gt;Revenue: €%{y}k&lt;extra&gt;&lt;/extra&gt;\"),\n    row=1, col=1,\n)\nfig.add_trace(\n    go.Scatter(x=months, y=costs, mode=\"lines+markers\", name=\"Costs\",\n               line=dict(color=GOLD, width=3), marker=dict(size=8),\n               hovertemplate=\"%{x}&lt;br&gt;Costs: €%{y}k&lt;extra&gt;&lt;/extra&gt;\"),\n    row=1, col=1,\n)\n\nbar_colors = [NAVY if p &gt;= 0 else RED for p in profit]\nfig.add_trace(\n    go.Bar(x=months, y=profit, marker_color=bar_colors, name=\"Profit\",\n           hovertemplate=\"%{x}&lt;br&gt;Profit: €%{y}k&lt;extra&gt;&lt;/extra&gt;\"),\n    row=1, col=2,\n)\n\nfig.update_layout(\n    title=dict(text=\"SME Annual Financial Overview\", x=0.5,\n               font=dict(size=18, color=NAVY)),\n    paper_bgcolor=\"#F4F6FA\",\n    plot_bgcolor=\"#F4F6FA\",\n    height=480,\n    showlegend=True,\n    legend=dict(orientation=\"h\", y=-0.15, x=0.25),\n    margin=dict(l=50, r=30, t=80, b=50),\n)\nfig.update_yaxes(title_text=\"€ (thousands)\", gridcolor=\"#d9dee8\",\n                 zeroline=True, zerolinecolor=GOLD)\nfig.update_xaxes(gridcolor=\"#d9dee8\")\n\nfig.show()"
+  },
+  {
+    "objectID": "projects/sales_dashboard.html#key-takeaways",
+    "href": "projects/sales_dashboard.html#key-takeaways",
+    "title": "Sales Dashboard",
+    "section": "Key Takeaways",
+    "text": "Key Takeaways\n\nRevenue grew steadily across the year, peaking at €120k in December\nCosts remained controlled, never exceeding 50% of revenue\nProfit was positive every month, reaching €60k in December"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Alexander Meehan",
+    "section": "",
+    "text": "I’m an MSc Business Analytics candidate at Dublin City University with a background in Economics and Politics. I’m interested in using data to solve real business problems — from forecasting demand to building dashboards that make complex information easy to act on.\nThis portfolio showcases my projects, skills and experience as I complete my masters and move into the world of data and business analytics.\nI’m available for opportunities from May 2026.\n\nAbout Me · Projects · CV"
+  },
+  {
+    "objectID": "index.html#hi-im-alexander",
+    "href": "index.html#hi-im-alexander",
+    "title": "Alexander Meehan",
+    "section": "",
+    "text": "I’m an MSc Business Analytics candidate at Dublin City University with a background in Economics and Politics. I’m interested in using data to solve real business problems — from forecasting demand to building dashboards that make complex information easy to act on.\nThis portfolio showcases my projects, skills and experience as I complete my masters and move into the world of data and business analytics.\nI’m available for opportunities from May 2026.\n\nAbout Me · Projects · CV"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "Hi, I’m Alexander — an MSc Business Analytics candidate at Dublin City University with a background in Economics and Politics from University College Dublin.\nI’m passionate about bridging the gap between complex data and real-world business strategy. My academic journey has equipped me with hands-on experience in Python, SQL, and machine learning, which I’ve applied to projects like predicting demand and streamlining supply chain operations for SMEs through interactive dashboards and data-driven insights.\nDuring my master’s dissertation, I served as project lead on an applied consultancy project — coordinating a team, delivering analytical recommendations, and building tools that translated messy datasets into clear, actionable decisions for stakeholders.\nBeyond the numbers, I’ve built a solid foundation in customer-facing and leadership roles — from managing sales and client relationships at Geoghegan’s Menswear to running the social media presence of UCD’s Politics & International Relations Society.\nOutside of work and study, you’ll find me on the rugby pitch with Navan RFC or representing Bhulf Tón CLG.\nI’m available for opportunities from May 2026 — feel free to connect with me on LinkedIn.\nYou might like to look at my projects projects"
+  }
+]

@@ -1,0 +1,9 @@
+---
+title: "ConcussID: A New Venture to Improve Player Welfare"
+categories: [Entrepreneurship, Business Strategy, Health Tech]
+---
+
+A new venture strategy for an AI-powered app that diagnoses concussion in
+grassroots athletes, addressing inequality in access to sports medicine.
+
+[Download the full report (DOCX)](docs/concussid_venture_strategy.docx)

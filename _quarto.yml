@@ -4,6 +4,7 @@ project:
 
 website:
   title: "Alexander Meehan"
+  favicon: images/favicon.ico
   navbar:
     left:
       - href: index.qmd
@@ -19,7 +20,7 @@ website:
       - href: reflection.qmd
         text: Reflections
   footer:
-    left: "© 2026 Alexander Meehan"
+    left: "© 2025 Alexander Meehan"
     right: "Built with [Quarto](https://quarto.org)"
 
 format:

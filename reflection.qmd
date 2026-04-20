@@ -5,16 +5,16 @@ date: today
 format: html
 ---
 
-## What I Learned
+## Reflecting On The Building Process
 
-
-
-## Challenges Faced
-
-Describe any challenges...
-
-## Key Takeaways
-
-- Takeaway 1
-- Takeaway 2
-- Takeaway 3
+ Building this ePortfolio has been one of the more practical and challenging experiences of this course. 
+ Coming in with no knowledge of web development and version control, I quickly had to get comfortable
+ with tools like Quarto, Git, and GitHub, none of which I had used before. The process wasn't  always smooth. 
+ Small issues like line ending conflicts in Git or figuring out how to add my own prokects and python code to my portfolio
+ took more time than expected, but working through them gave me a much better understanding of how these tools actually 
+ function under the hood. What surprised me most was how much I enjoyed the design side, experimenting with structuring pages, 
+ thinking about how to present projects clearly, and making the portfolio feel like something I was genuinely proud of. 
+ It pushed me to think not just as a student submitting work, but as someone presenting themselves professionally.
+ Overall, building this ePortfolio taught me that the technical and creative sides of data science are more connected 
+ than I initially thought. It's not enough to do good analysis, communicating it well matters just as much. 
+ That's a lesson I'll carry into my career.

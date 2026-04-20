@@ -12,7 +12,7 @@ about:
       href: mailto:alex.meehan2001@gmail.com
 ---
 
-## Hi, I'm Alexander 👋
+## Hi, I'm Alex!
 
 I'm an MSc Business Analytics candidate at Dublin City University with a 
 background in Economics and Politics. I'm interested in using data to solve 

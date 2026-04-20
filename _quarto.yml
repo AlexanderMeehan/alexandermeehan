@@ -28,7 +28,7 @@ website:
         text: GitHub
         target: _blank
 
-  footer:
+footer:
     left: "© 2026 Alexander Meehan"
     right: "Built with [Quarto](https://quarto.org)"
 

@@ -1,0 +1,20 @@
+---
+title: "Reflections"
+author: "Alexadner Meehan"
+date: today
+format: html
+---
+
+## What I Learned
+
+
+
+## Challenges Faced
+
+Describe any challenges...
+
+## Key Takeaways
+
+- Takeaway 1
+- Takeaway 2
+- Takeaway 3

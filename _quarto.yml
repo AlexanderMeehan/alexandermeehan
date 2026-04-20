@@ -16,6 +16,8 @@ website:
         text: Projects
       - href: Python.qmd
         text: Python
+      - href: reflection.qmd
+        text: Reflections
 
 format:
   html:

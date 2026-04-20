@@ -7,7 +7,9 @@ code-fold: true
 
 This dashboard presents a financial overview of a small-to-medium enterprise (SME),
 analysing monthly revenue, costs and profit across a full calendar year. Hover over
-any point or bar for exact values.
+any point or bar for exact values. This is an example of the dashboards we used in the Applied Consultancy Project
+to help provide actionalble insights. Due to data protection, the data used in the above dashbaord 
+is mock data. 
 
 ```{python}
 import plotly.graph_objects as go

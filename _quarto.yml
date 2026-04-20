@@ -6,6 +6,8 @@ website:
   title: "Alexander Meehan"
   favicon: images/favicon.ico
   navbar:
+    title: false
+    logo: images/favicon.ico
     left:
       - href: index.qmd
         text: Home

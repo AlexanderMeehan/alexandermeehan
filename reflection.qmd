@@ -18,3 +18,12 @@ format: html
  Overall, building this ePortfolio taught me that the technical and creative sides of data science are more connected 
  than I initially thought. It's not enough to do good analysis, communicating it well matters just as much. 
  That's a lesson I'll carry into my career.
+
+```{mermaid}
+flowchart LR
+    A[Started Module] --> B[Learned Git & GitHub]
+    B --> C[Built Quarto Site]
+    C --> D[Deployed to GitHub Pages]
+    D --> E[Developed Projects]
+    E --> F[Reflected on Learning]
+```

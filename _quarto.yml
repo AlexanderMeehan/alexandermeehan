@@ -19,8 +19,14 @@ website:
         text: Python
       - href: reflection.qmd
         text: Reflections
+    right:
+      - href: contact.qmd
+        text: Contact
+      - href: https://github.com/alexandermeehan
+        text: GitHub
+        target: _blank
   footer:
-    left: "© 2025 Alexander Meehan"
+    left: "© 2026 Alexander Meehan"
     right: "Built with [Quarto](https://quarto.org)"
 
 format:

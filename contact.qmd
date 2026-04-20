@@ -1,0 +1,28 @@
+---
+title: "Contact & References"
+author: "Alexander Meehan"
+---
+
+## Get In Touch
+
+I'm currently available for opportunities from **May 2026**. 
+Whether you have a question, an opportunity, or just want to connect, 
+feel free to reach out through any of the channels below.
+
+::: {.callout-note}
+The best way to reach me is via email or LinkedIn.
+:::
+
+## Contact Details
+
+| Method | Details |
+|---|---|
+| **Email** | [alex.meehan2001@gmail.com](mailto:alex.meehan2001@gmail.com) |
+| **LinkedIn** | [alexander-meehan-267875208](https://linkedin.com/in/alexander-meehan-267875208) |
+| **GitHub** | [alexandermeehan](https://github.com/alexandermeehan) |
+| **Location** | Dublin, Ireland |
+
+## References
+
+References are available upon request. Please reach out via email 
+and I will be happy to provide details.

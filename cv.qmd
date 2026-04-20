@@ -10,7 +10,7 @@ format:
 MSc Business Analytics candidate at Dublin City University with a background in 
 Economics and Politics. Experienced in bridging the gap between complex data and 
 business strategy, with a strong foundation in SQL, Python and quantitative research.
-Available for work from **May 2026**.
+Available for work from May 2026.
 
 💼 [LinkedIn](https://linkedin.com/in/alexander-meehan-267875208) | 
 
@@ -37,12 +37,12 @@ Available for work from **May 2026**.
 
 **MSc Dissertation | Dublin City University | 2025–2026**
 
-Delivered a full analytics consultancy engagement for an SME as **project lead**, 
+Delivered a full analytics consultancy engagement for an SME as project lead, 
 managing team coordination and serving as the primary client contact.
 
-- Implemented **machine learning models** to forecast product demand and optimise 
+- Implemented machine learning models to forecast product demand and optimise 
 inventory management
-- Built **interactive dashboards** to communicate complex data findings to 
+- Built interactive dashboards to communicate complex data findings to 
 non-technical stakeholders
 - Drove strategic recommendations around supply chain efficiency and product buying
 
@@ -87,4 +87,4 @@ through strategic content planning
 
 ## Interests
 
-Active member of **Navan RFC** and **Bhulf Tón CLG**.
+Active member of Navan RFC and Bhulf Tón CLG.
